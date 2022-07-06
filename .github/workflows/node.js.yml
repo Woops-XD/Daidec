@@ -36,8 +36,6 @@ jobs:
   deploy:
     needs: [test]
     runs-on: ubuntu-latest
-
-
     steps:
    
     - name: SSH and deploy node app
@@ -46,9 +44,9 @@ jobs:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}  
-        run: |
+        script: |
           su  daidec
-          cd Daidec
+          cd ~/Daidec
           git pull origin main
           npm install 
           pm2 restart www
