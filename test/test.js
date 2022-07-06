@@ -7,7 +7,7 @@ describe('App', function () {
   it('has the default page', function (done) {
     request(app)
       .get('/')
-      .expect(/Boyuan Interview/, done);
+      .expect(/Interview/, done);
   });
 });
 
