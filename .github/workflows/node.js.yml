@@ -45,7 +45,6 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}  
         script: |
-          su  daidec
           cd ~/Daidec
           git pull origin main
           npm install 
