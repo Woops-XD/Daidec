@@ -6,11 +6,16 @@ the project is host on DigitalOcean
 You can see a  hosted version :  [http://128.199.218.72:3000/](http://128.199.218.72:3000/)  \
 you can test the api using postman whcih has been share to Olivier
 There are 3 api created    
-1. ROOT_URl      
+1. ROOT_URl     
++get 
 + welcome page       
-2. ROOT_UR/api/exact_name      
+2. ROOT_UR/api/exact_name    
++ post   
++ body {"name": $your_input }
 + Return the information of the car based on an exact value match of the “Name”     
-3. ROOT_UR/api/name_contain    
+3. ROOT_UR/api/name_contain   
++ post   
++ body {"name": $your_input } 
 + Return the information of one or multiple cars based on a search value of the “Name”  
 
 <!-- GETTING STARTED -->
