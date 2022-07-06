@@ -7,7 +7,7 @@ var db = require("../dbService");
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Boyuan Interview' } );
+  res.render('index', { title: `Boyuan's daidec  Interview` } );
 });
 
 
