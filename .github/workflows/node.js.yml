@@ -34,7 +34,7 @@ jobs:
 
 
   deploy:
-    needs:[test]
+    needs: [test]
     runs-on: ubuntu-latest
 
 
